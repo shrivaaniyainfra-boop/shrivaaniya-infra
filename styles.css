@@ -1,32 +1,59 @@
-.container {
-    width: 80%;
-    margin: 0 auto;
-}
-
 .header {
-    background-color: #f8f8f8;
-    padding: 20px;
-    text-align: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 15px;
 }
 
-.footer {
-    background-color: #f8f8f8;
-    padding: 10px;
-    text-align: center;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+.header h1 {
+  color: #fff;
 }
 
-.button {
-    background-color: #008CBA;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.nav {
+  list-style: none;
 }
 
-.button:hover {
-    background-color: #005f73;
+.nav li {
+  display: inline;
+  margin: 0 15px;
+}
+
+.nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.hero {
+  background-image: url('hero-bg.jpg');
+  color: #fff;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: space-around;
+  padding: 50px 0;
+}
+
+.feature {
+  text-align: center;
+}
+
+.about, .services, .team, .contact, .footer {
+  padding: 50px 20px;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+  }
+  .features {
+    flex-direction: column;
+  }
 }
